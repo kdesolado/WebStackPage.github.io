@@ -66,6 +66,27 @@
     padding: 7px 0;
 }
 
+.personal-pick-mark {
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: -0.3px;
+    margin-right: 10px;
+    margin-top: 7px;
+    width: 40px;
+}
+
+.personal-pick-mark--chatgpt { background: #111827; }
+.personal-pick-mark--github { background: #24292f; }
+.personal-pick-mark--cloudflare { background: #f48120; }
+.personal-pick-mark--figma { background: #a259ff; }
+
 /* Pionevium Route brand */
 .pionevium-logo {
     align-items: center;
