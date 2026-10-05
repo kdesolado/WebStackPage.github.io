@@ -65,3 +65,87 @@
 .img-circle {
     padding: 7px 0;
 }
+
+/* Pionevium Route brand */
+.pionevium-logo {
+    align-items: center;
+    color: #f7f8fa;
+    display: inline-flex !important;
+    font-family: "Arimo", "Helvetica Neue", Arial, sans-serif;
+    gap: 11px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.pionevium-logo:hover,
+.pionevium-logo:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pionevium-logo__mark {
+    align-items: center;
+    background: linear-gradient(145deg, #ffcb57, #f59b23);
+    border-radius: 11px 11px 11px 4px;
+    box-shadow: 0 6px 18px rgba(245, 155, 35, 0.24);
+    color: #24282d;
+    display: inline-flex;
+    flex: 0 0 38px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 38px;
+    justify-content: center;
+    letter-spacing: -1px;
+}
+
+.pionevium-logo__name {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    line-height: 1.05;
+    white-space: nowrap;
+}
+
+.pionevium-logo__name small {
+    color: #9da3aa;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+.pionevium-logo--compact {
+    display: none !important;
+    justify-content: center;
+}
+
+.sidebar-menu.collapsed .pionevium-logo--compact {
+    display: flex !important;
+}
+
+.pionevium-logo--dark {
+    color: #25282d;
+}
+
+.pionevium-logo--dark:hover,
+.pionevium-logo--dark:focus {
+    color: #111318;
+}
+
+.navbar.horizontal-menu .navbar-inner .navbar-brand .pionevium-logo {
+    display: inline-flex !important;
+}
+
+@media (max-width: 767px) {
+    .pionevium-logo__mark {
+        flex-basis: 34px;
+        height: 34px;
+    }
+
+    .pionevium-logo__name {
+        font-size: 17px;
+    }
+}
