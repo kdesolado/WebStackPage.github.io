@@ -81,20 +81,19 @@
 }
 
 .health-page {
-    background: #f4f7f5;
-    color: #26332d;
+    background: #f7f8fa;
+    color: #2c2e2f;
     min-height: 100vh;
 }
 
-.health-page .navbar.horizontal-menu {
-    background: #ffffff;
-    border-bottom: 1px solid #dfe8e3;
+.health-main-content {
+    background: #f7f8fa;
 }
 
 .health-shell {
     margin: 0 auto;
-    max-width: 1180px;
-    padding: 105px 28px 64px;
+    max-width: 1160px;
+    padding: 26px 18px 54px;
 }
 
 .health-topline {
@@ -105,24 +104,30 @@
 }
 
 .health-back-link {
-    color: #326c55;
+    color: #979898;
     font-size: 14px;
     font-weight: 700;
 }
 
+.health-back-link:hover,
+.health-back-link:focus {
+    color: #f59b23;
+}
+
 .health-hero {
-    background: linear-gradient(135deg, #173c30, #2f7258);
-    border-radius: 18px;
+    background: linear-gradient(135deg, #2c2e2f, #3b3d3f);
+    border-radius: 6px;
     color: #ffffff;
     margin-bottom: 24px;
     overflow: hidden;
     padding: 38px 40px;
     position: relative;
+    box-shadow: 0 18px 36px -28px rgba(0, 0, 0, 0.65);
 }
 
 .health-hero:after {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(255, 203, 87, 0.34), rgba(245, 155, 35, 0.12));
+    border-radius: 50% 50% 50% 18%;
     content: "";
     height: 220px;
     position: absolute;
@@ -132,7 +137,7 @@
 }
 
 .health-kicker {
-    color: #bce3d2;
+    color: #ffbf48;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.8px;
@@ -147,7 +152,7 @@
 }
 
 .health-hero p {
-    color: #e5f2ec;
+    color: #d4d5d6;
     font-size: 16px;
     line-height: 1.65;
     margin: 0;
@@ -157,19 +162,19 @@
 .health-disclosure,
 .health-safety {
     background: #ffffff;
-    border: 1px solid #dfe8e3;
-    border-radius: 12px;
+    border: 1px solid #e4ecf3;
+    border-radius: 4px;
     line-height: 1.6;
     margin-bottom: 24px;
     padding: 18px 20px;
 }
 
 .health-disclosure {
-    border-left: 5px solid #f4a340;
+    border-left: 5px solid #f59b23;
 }
 
 .health-safety {
-    border-left: 5px solid #34765b;
+    border-left: 5px solid #68b828;
 }
 
 .health-section-title {
@@ -178,7 +183,7 @@
 }
 
 .health-section-intro {
-    color: #66736d;
+    color: #979898;
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -191,16 +196,22 @@
 
 .health-card {
     background: #ffffff;
-    border: 1px solid #dfe8e3;
-    border-radius: 14px;
+    border: 1px solid #e4ecf3;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     min-height: 330px;
     padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.health-card:hover {
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    transform: translateY(-6px);
 }
 
 .health-card__eyebrow {
-    color: #39745d;
+    color: #f59b23;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.1px;
@@ -208,14 +219,14 @@
 }
 
 .health-card h3 {
-    color: #20342b;
+    color: #2c2e2f;
     font-size: 23px;
     margin: 8px 0 10px;
 }
 
 .health-card p,
 .health-card li {
-    color: #5f6e67;
+    color: #6f7275;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -234,13 +245,13 @@
 }
 
 .health-evidence-link {
-    color: #326c55;
+    color: #e88c11;
     font-size: 13px;
     font-weight: 700;
 }
 
 .health-buy-button {
-    background: #e8ecea;
+    background: #eef1f4;
     border: 0;
     border-radius: 8px;
     color: #7a8580;
@@ -252,8 +263,8 @@
 
 .health-sources {
     background: #ffffff;
-    border: 1px solid #dfe8e3;
-    border-radius: 14px;
+    border: 1px solid #e4ecf3;
+    border-radius: 4px;
     margin-top: 28px;
     padding: 24px;
 }
@@ -263,7 +274,7 @@
 }
 
 @media (max-width: 767px) {
-    .health-shell { padding: 88px 16px 42px; }
+    .health-shell { padding: 22px 0 42px; }
     .health-hero { padding: 28px 24px; }
     .health-hero h1 { font-size: 28px; }
     .health-grid { grid-template-columns: 1fr; }
