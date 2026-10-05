@@ -622,6 +622,10 @@
     display: flex !important;
 }
 
+.sidebar-menu.collapsed .pionevium-logo.logo-expanded {
+    display: none !important;
+}
+
 .pionevium-logo--dark {
     color: #25282d;
 }
