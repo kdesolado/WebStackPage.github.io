@@ -281,6 +281,287 @@
     .health-topline { align-items: flex-start; flex-direction: column; gap: 8px; }
 }
 
+/* Blender 3D resource page */
+.blender-page,
+.blender-main-content {
+    background: #f7f8fa;
+    color: #2c2e2f;
+}
+
+.blender-shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 26px 18px 54px;
+}
+
+.blender-topline {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.blender-back-link {
+    color: #979898;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.blender-back-link:hover,
+.blender-back-link:focus {
+    color: #ea7600;
+}
+
+.blender-hero {
+    align-items: center;
+    background: radial-gradient(circle at 82% 20%, rgba(234, 118, 0, 0.24), transparent 34%), linear-gradient(135deg, #171b20, #27313b);
+    border-radius: 7px;
+    box-shadow: 0 22px 42px -30px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    min-height: 330px;
+    overflow: hidden;
+    padding: 48px 54px;
+    position: relative;
+}
+
+.blender-hero:before {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    content: "";
+    height: 320px;
+    position: absolute;
+    right: -95px;
+    top: -135px;
+    width: 320px;
+}
+
+.blender-hero__copy {
+    max-width: 670px;
+    position: relative;
+    z-index: 1;
+}
+
+.blender-kicker,
+.blender-section-kicker,
+.blender-card__eyebrow {
+    color: #ea7600;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.blender-hero h1 {
+    color: #ffffff;
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin: 10px 0 14px;
+}
+
+.blender-hero p {
+    color: #ccd3d9;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 24px;
+    max-width: 610px;
+}
+
+.blender-primary-button {
+    background: #ea7600;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 18px;
+}
+
+.blender-primary-button:hover,
+.blender-primary-button:focus {
+    background: #ff8a18;
+    color: #ffffff;
+}
+
+.blender-primary-button i {
+    margin-left: 8px;
+}
+
+.blender-hero__mark {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px 28px 28px 8px;
+    display: flex;
+    flex: 0 0 150px;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    margin-left: 36px;
+    position: relative;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+.blender-hero__mark i {
+    color: #ea7600;
+    font-size: 54px;
+}
+
+.blender-hero__mark span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.blender-section-heading {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.blender-section-heading h2,
+.blender-path h2 {
+    font-size: 25px;
+    margin: 5px 0 0;
+}
+
+.blender-section-heading p {
+    color: #979898;
+    margin: 0 0 3px;
+}
+
+.blender-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.blender-card {
+    background: #ffffff;
+    border: 1px solid #e4ecf3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 275px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.blender-card:hover {
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    transform: translateY(-6px);
+}
+
+.blender-card__icon {
+    align-items: center;
+    background: #fff4e8;
+    border-radius: 10px 10px 10px 3px;
+    color: #ea7600;
+    display: flex;
+    font-size: 20px;
+    height: 44px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 44px;
+}
+
+.blender-card h3 {
+    font-size: 20px;
+    margin: 7px 0 10px;
+}
+
+.blender-card p {
+    color: #6f7275;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.blender-card > a {
+    color: #d86c00;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.blender-card > a i {
+    margin-left: 6px;
+}
+
+.blender-path {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e4ecf3;
+    border-radius: 5px;
+    display: grid;
+    gap: 34px;
+    grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.6fr);
+    margin-top: 28px;
+    padding: 28px;
+}
+
+.blender-path__intro p {
+    color: #797d80;
+    line-height: 1.6;
+    margin: 10px 0 0;
+}
+
+.blender-steps {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blender-steps li {
+    background: #f7f8fa;
+    border-radius: 4px;
+    min-height: 105px;
+    padding: 14px;
+}
+
+.blender-steps span {
+    color: #ea7600;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.blender-steps strong,
+.blender-steps small {
+    display: block;
+}
+
+.blender-steps small {
+    color: #8a8d90;
+    line-height: 1.4;
+    margin-top: 4px;
+}
+
+@media (max-width: 991px) {
+    .blender-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .blender-path { grid-template-columns: 1fr; }
+    .blender-hero__mark { display: none; }
+}
+
+@media (max-width: 767px) {
+    .blender-shell { padding: 22px 0 42px; }
+    .blender-topline { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .blender-hero { min-height: 0; padding: 34px 26px; }
+    .blender-hero h1 { font-size: 32px; }
+    .blender-hero__mark { display: none; }
+    .blender-section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .blender-grid { grid-template-columns: 1fr; }
+    .blender-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* Pionevium Route brand */
 .pionevium-logo {
     align-items: center;
