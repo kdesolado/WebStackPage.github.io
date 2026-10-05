@@ -87,6 +87,196 @@
 .personal-pick-mark--cloudflare { background: #f48120; }
 .personal-pick-mark--figma { background: #a259ff; }
 
+.health-page {
+    background: #f4f7f5;
+    color: #26332d;
+    min-height: 100vh;
+}
+
+.health-page .navbar.horizontal-menu {
+    background: #ffffff;
+    border-bottom: 1px solid #dfe8e3;
+}
+
+.health-shell {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 105px 28px 64px;
+}
+
+.health-topline {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.health-back-link {
+    color: #326c55;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.health-hero {
+    background: linear-gradient(135deg, #173c30, #2f7258);
+    border-radius: 18px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 38px 40px;
+    position: relative;
+}
+
+.health-hero:after {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    content: "";
+    height: 220px;
+    position: absolute;
+    right: -60px;
+    top: -85px;
+    width: 220px;
+}
+
+.health-kicker {
+    color: #bce3d2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.health-hero h1 {
+    color: #ffffff;
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+
+.health-hero p {
+    color: #e5f2ec;
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 720px;
+}
+
+.health-disclosure,
+.health-safety {
+    background: #ffffff;
+    border: 1px solid #dfe8e3;
+    border-radius: 12px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    padding: 18px 20px;
+}
+
+.health-disclosure {
+    border-left: 5px solid #f4a340;
+}
+
+.health-safety {
+    border-left: 5px solid #34765b;
+}
+
+.health-section-title {
+    font-size: 22px;
+    margin: 34px 0 8px;
+}
+
+.health-section-intro {
+    color: #66736d;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.health-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.health-card {
+    background: #ffffff;
+    border: 1px solid #dfe8e3;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 330px;
+    padding: 24px;
+}
+
+.health-card__eyebrow {
+    color: #39745d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.health-card h3 {
+    color: #20342b;
+    font-size: 23px;
+    margin: 8px 0 10px;
+}
+
+.health-card p,
+.health-card li {
+    color: #5f6e67;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.health-card ul {
+    margin: 4px 0 18px;
+    padding-left: 20px;
+}
+
+.health-card__actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.health-evidence-link {
+    color: #326c55;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.health-buy-button {
+    background: #e8ecea;
+    border: 0;
+    border-radius: 8px;
+    color: #7a8580;
+    cursor: not-allowed;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 14px;
+}
+
+.health-sources {
+    background: #ffffff;
+    border: 1px solid #dfe8e3;
+    border-radius: 14px;
+    margin-top: 28px;
+    padding: 24px;
+}
+
+.health-sources li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+    .health-shell { padding: 88px 16px 42px; }
+    .health-hero { padding: 28px 24px; }
+    .health-hero h1 { font-size: 28px; }
+    .health-grid { grid-template-columns: 1fr; }
+    .health-topline { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
+
 /* Pionevium Route brand */
 .pionevium-logo {
     align-items: center;
